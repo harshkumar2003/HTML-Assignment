@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Part Layout with CSS</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .top-row {
+            flex: 1;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #ccc;
+        }
+        .bottom-row {
+            flex: 3;
+            display: flex;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            padding: 20px;
+        }
+        .left-column {
+            background-color: #e0e0e0;
+            border-right: 1px solid #ccc;
+        }
+        .right-column {
+            background-color: #d0d0d0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-row">Top Row</div>
+        <div class="bottom-row">
+            <div class="left-column">Left Column</div>
+            <div class="right-column">Right Column</div>
+        </div>
+    </div>
+</body>
+</html>
